@@ -49,7 +49,7 @@
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     
-    JSAlertView *alert = [JSAlertView alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+    JSAlertView *alert = [JSAlertView alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* noButton = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         [alert dismissViewControllerAnimated:YES completion:nil];
         if (completionHandler) {
@@ -87,7 +87,7 @@
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     
-    JSAlertView *alert = [JSAlertView alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+    JSAlertView *alert = [JSAlertView alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     for (NSString *btnTitle in buttonTitles) {
         UIAlertAction* button = [UIAlertAction actionWithTitle:btnTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
             [alert dismissViewControllerAnimated:YES completion:nil];
