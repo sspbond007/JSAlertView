@@ -13,7 +13,7 @@
 		80ACF8EA1DAEB7F300A1C7A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80ACF8E81DAEB7F300A1C7A8 /* Main.storyboard */; };
 		80ACF8EC1DAEB7F300A1C7A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80ACF8EB1DAEB7F300A1C7A8 /* Assets.xcassets */; };
 		80ACF8EF1DAEB7F300A1C7A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80ACF8ED1DAEB7F300A1C7A8 /* LaunchScreen.storyboard */; };
-		80ACF8F81DAEB84300A1C7A8 /* JSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ACF8F71DAEB84300A1C7A8 /* JSAlertView.m */; };
+		CFD37EF61E55DA72007592B7 /* JSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD37EF51E55DA72007592B7 /* JSAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		80ACF8EB1DAEB7F300A1C7A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80ACF8EE1DAEB7F300A1C7A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80ACF8F01DAEB7F300A1C7A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80ACF8F61DAEB84300A1C7A8 /* JSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAlertView.h; sourceTree = "<group>"; };
-		80ACF8F71DAEB84300A1C7A8 /* JSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAlertView.m; sourceTree = "<group>"; };
+		CFD37EF41E55DA72007592B7 /* JSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSAlertView.h; path = ../../Source/JSAlertView.h; sourceTree = "<group>"; };
+		CFD37EF51E55DA72007592B7 /* JSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSAlertView.m; path = ../../Source/JSAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +61,12 @@
 		80ACF8DE1DAEB7F300A1C7A8 /* JSAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				CFD37EF41E55DA72007592B7 /* JSAlertView.h */,
+				CFD37EF51E55DA72007592B7 /* JSAlertView.m */,
 				80ACF8E21DAEB7F300A1C7A8 /* AppDelegate.h */,
 				80ACF8E31DAEB7F300A1C7A8 /* AppDelegate.m */,
 				80ACF8E51DAEB7F300A1C7A8 /* ViewController.h */,
 				80ACF8E61DAEB7F300A1C7A8 /* ViewController.m */,
-				80ACF8F61DAEB84300A1C7A8 /* JSAlertView.h */,
-				80ACF8F71DAEB84300A1C7A8 /* JSAlertView.m */,
 				80ACF8E81DAEB7F300A1C7A8 /* Main.storyboard */,
 				80ACF8EB1DAEB7F300A1C7A8 /* Assets.xcassets */,
 				80ACF8ED1DAEB7F300A1C7A8 /* LaunchScreen.storyboard */,
@@ -155,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80ACF8F81DAEB84300A1C7A8 /* JSAlertView.m in Sources */,
+				CFD37EF61E55DA72007592B7 /* JSAlertView.m in Sources */,
 				80ACF8E71DAEB7F300A1C7A8 /* ViewController.m in Sources */,
 				80ACF8E41DAEB7F300A1C7A8 /* AppDelegate.m in Sources */,
 				80ACF8E11DAEB7F300A1C7A8 /* main.m in Sources */,
