@@ -43,3 +43,8 @@ Lastly, you can use the following method for full customization:
     }];
 	
 JSAlertView can be used for any iOS version without any worry for support for UIAlertView in any iOS version.
+
+
+#Use it
+Add pod 'JSAlertView' to your Podfile or copy 'JSAlertView.h' and 'JSAlertView.m' in your project.
+    
