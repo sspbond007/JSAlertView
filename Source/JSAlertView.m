@@ -40,6 +40,12 @@
 {
     return [self alert:message withTitle:nil buttons:@[@"Ok"] withCompletionHandler:nil];
 }
+
++ (instancetype)alertWithTitle:(NSString*)title message:(NSString*)message {
+    
+    return [self alert:message withTitle:title buttons:@[@"Ok"] withCompletionHandler:nil];
+}
+
 + (instancetype)confirm:(NSString*)message withCompletionHandler:(void(^)(BOOL accepted))completionHandler
 {
     return [self confirm:message withTitle:nil withCompletionHandler:completionHandler];
@@ -112,6 +118,23 @@
     [alert show];
     return alert;
 #endif
+}
+
++ (instancetype)actionSheet:(NSString*)message withTitle:(NSString*)title buttons:(NSArray*)buttonTitles withCompletionHandler:(void(^)(NSInteger buttonIndex, NSString *buttonTitle))completionHandler
+{
+    JSAlertView *alert = [JSAlertView alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+    for (NSString *btnTitle in buttonTitles) {
+        UIAlertAction* button = [UIAlertAction actionWithTitle:btnTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            [alert dismissViewControllerAnimated:YES completion:nil];
+            if (completionHandler) {
+                completionHandler([buttonTitles indexOfObject:btnTitle], btnTitle);
+            }
+        }];
+        [alert addAction:button];
+    }
+    [alert show];
+    
+    return alert;
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex

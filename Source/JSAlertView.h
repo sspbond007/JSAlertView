@@ -17,12 +17,18 @@
 // Displays simple alert message (no title) with 'Ok' button
 + (instancetype)alert:(NSString*)message;
 
+// Displays simple alert message with title and 'Ok' button
++ (instancetype)alertWithTitle:(NSString*)title message:(NSString*)message;
+
 // Displays message (no title) with 'Yes' and 'No' button. It can be used to display confirmirmation alert.
 + (instancetype)confirm:(NSString*)message withCompletionHandler:(void(^)(BOOL accepted))completionHandler;
 
 // Same as previous one with addition option to show title
 + (instancetype)confirm:(NSString*)message withTitle:(NSString*)title  withCompletionHandler:(void(^)(BOOL accepted))completionHandler;
 
-// Standard menthod for displaying alert, fully customizable.
+// Standard method for displaying alert, fully customizable.
 + (instancetype)alert:(NSString*)message withTitle:(NSString*)title buttons:(NSArray*)buttonTitles withCompletionHandler:(void(^)(NSInteger buttonIndex, NSString *buttonTitle))completionHandler;
+
+// display as action sheet
++ (instancetype)actionSheet:(NSString*)message withTitle:(NSString*)title buttons:(NSArray*)buttonTitles withCompletionHandler:(void(^)(NSInteger buttonIndex, NSString *buttonTitle))completionHandler;
 @end
